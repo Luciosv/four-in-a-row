@@ -9,6 +9,17 @@ class LightIndicator(ft.Container):
         
         self.col = 1
         self.bgcolor = self.color_player_1
+        self.blur = 5
+        
+        self.shadow = ft.BoxShadow(
+            spread_radius=1,
+            blur_radius=15,
+            color=ft.colors.AMBER_100,
+            offset=ft.Offset(0, 0),
+            blur_style=ft.ShadowBlurStyle.OUTER,
+        )
+        
+        self.border_radius = 10
     
     
     def toggle(self):
