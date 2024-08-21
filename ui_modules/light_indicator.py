@@ -4,12 +4,13 @@ class LightIndicator(ft.Container):
     def __init__(self):
         super().__init__()
         
-        self.color_player_1 = ft.colors.BLUE_300
-        self.color_player_2 = ft.colors.RED_300
+        self.color_player_1 = "#1446A3"
+        self.color_player_2 = "#D14D74"
         
         self.col = 1
         self.bgcolor = self.color_player_1
         self.blur = 5
+        self.width = 20
         
         self.shadow = ft.BoxShadow(
             spread_radius=1,
