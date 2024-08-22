@@ -8,6 +8,8 @@ class Connect4(ft.Container):
     def __init__(self,page:ft.Page):
         super().__init__()
         
+        page.bgcolor = "#131200"
+        
         self.expand = True
         page.theme_mode = ft.ThemeMode.DARK
         
@@ -19,8 +21,6 @@ class Connect4(ft.Container):
                 LightIndicator()
             ]
         )
-        
-        
         
         self.content = ft.Column(
             expand=True,
